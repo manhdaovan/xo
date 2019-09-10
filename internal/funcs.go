@@ -34,6 +34,8 @@ func (a *ArgType) NewTemplateFuncs() template.FuncMap {
 		"hasfield":           a.hasfield,
 		"getstartcount":      a.getstartcount,
 		"customtags":         a.customtags,
+		"toupper":            strings.ToUpper,
+		"tolower":            strings.ToLower,
 	}
 }
 
